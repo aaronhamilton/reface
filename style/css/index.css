@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background-image: url('img/light_blue_noise.png');
+  background-repeat: repeat-x;
+  background-position: 0px 200px;
+}
+body #header {
+  clear: both;
+  float: left;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 9000;
+  background-color: rgba(0, 0, 0, 0.86);
+}
+body #ctr {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+body #ctr .colmask {
+  position: relative;
+  /* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+
+  clear: both;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background: url('img/right_gradient.png') right;
+}
+body #ctr .colmask .colmid {
+  float: left;
+  width: 200%;
+  margin-left: -16px;
+  /* Width of right column */
+
+  position: relative;
+  right: 100%;
+  background: #fff;
+  /* Centre column background colour */
+
+}
+body #ctr .colmask .colmid .colleft {
+  float: left;
+  width: 100%;
+  margin-left: -50%;
+  position: relative;
+  left: 32px;
+  /* Left column width + right column width */
+
+  background: url('img/left_gradient.png') right;
+  background-repeat: repeat-y;
+  /* Left column background colour */
+
+}
+body #ctr .colmask .colmid .colleft .col1wrap {
+  float: left;
+  width: 50%;
+  position: relative;
+  right: 16px;
+  /* Width of left column */
+
+}
+body #ctr .colmask .colmid .colleft .col1wrap .col1 {
+  margin: 0 16px;
+  position: relative;
+  left: 200%;
+  overflow: hidden;
+  padding-top: 50px;
+}
+body #ctr .colmask .colmid .colleft .col1wrap .col1 .banner_center {
+  height: 286px;
+  margin-top: 119px;
+  background-image: url('img/banner_center_noise.png');
+  background-repeat: repeat-x;
+  margin-bottom: 16px;
+}
+body #ctr .colmask .colmid .colleft .col2 {
+  float: left;
+  float: right;
+  /* This overrides the float:left above */
+
+  width: 16px;
+  /* Width of left column content (left column width minus left and right padding) */
+
+  position: relative;
+  right: 0px;
+  /* Width of the left-had side padding on the left column */
+
+}
+body #ctr .colmask .colmid .colleft .col2content {
+  height: 272px;
+  width: 100%;
+  margin-top: 184px;
+  background: url('img/noise.png');
+}
+body #ctr .colmask .colmid .colleft .col3 {
+  float: left;
+  float: right;
+  /* This overrides the float:left above */
+
+  width: 16px;
+  /* Width of right column content (right column width minus left and right padding) */
+
+  position: relative;
+  left: 50%;
+}
+body #footer {
+  clear: both;
+  float: left;
+  width: 100%;
+  border-top: 1px solid #000;
+}

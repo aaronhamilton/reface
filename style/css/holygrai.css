@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* This removes the border around the viewport in old versions of IE */
+
+  width: 100%;
+  background: #fff;
+  font-size: 90%;
+}
+a {
+  color: #369;
+}
+a:hover {
+  color: #fff;
+  background: #369;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  margin: .8em 0 .2em 0;
+  padding: 0;
+}
+p {
+  margin: .4em 0 .8em 0;
+  padding: 0;
+}
+img {
+  margin: 0;
+}
+/* Header styles */
+#header {
+  clear: both;
+  float: left;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.86);
+  position: fixed;
+  z-index: 9000;
+}
+#header {
+//  border-bottom: 1px solid #000;
+}
+#header p,
+#header h1,
+#header h2 {
+  padding: .4em 15px 0 15px;
+  margin: 0;
+}
+#header ul {
+  clear: left;
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+#header ul li {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#header ul li a {
+  display: block;
+  float: left;
+  margin: 0 0 0 1px;
+  padding: 3px 10px;
+  text-align: center;
+  background: #eee;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  left: 15px;
+  line-height: 1.3em;
+}
+#header ul li a:hover {
+  background: #369;
+  color: #fff;
+}
+#header ul li a.active,
+#header ul li a.active:hover {
+  color: #fff;
+  background: #000;
+  font-weight: bold;
+}
+#header ul li a span {
+  display: block;
+}
+/* 'widths' sub menu */
+#layoutdims {
+  clear: both;
+  background: #eee;
+  border-top: 4px solid #000;
+  margin: 0;
+  padding: 6px 15px !important;
+  text-align: right;
+}
+/* column container */
+.colmask {
+  position: relative;
+  /* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+
+  clear: both;
+  float: left;
+  width: 100%;
+  /* width of whole page */
+
+  overflow: hidden;
+  /* This chops off any overhanging divs */
+
+}
+/* holy grail 3 column settings */
+.holygrail {
+  background: url('img/right_gradient.png') right;
+  /* Right column background colour */
+
+}
+.holygrail .colmid {
+  float: left;
+  width: 200%;
+  margin-left: -16px;
+  /* Width of right column */
+
+  position: relative;
+  right: 100%;
+  background: #fff;
+  /* Centre column background colour */
+
+}
+.holygrail .colleft {
+  float: left;
+  width: 100%;
+  margin-left: -50%;
+  position: relative;
+  left: 32px;
+  /* Left column width + right column width */
+
+  background: url('img/left_gradient.png') right;
+  background-repeat: repeat-y;
+  /* Left column background colour */
+
+}
+.holygrail .col1wrap {
+  float: left;
+  width: 50%;
+  position: relative;
+  right: 16px;
+  /* Width of left column */
+
+  padding-bottom: 1em;
+  /* Centre column bottom padding. Leave it out if it's zero */
+
+}
+.holygrail .col1 {
+  margin: 0 16px;
+  /* Centre column side padding:
+														Left padding = left column width + centre column left padding width
+														Right padding = right column width + centre column right padding width */
+
+  position: relative;
+  left: 200%;
+  overflow: hidden;
+  padding-top: 50px;
+}
+.holygrail .col2 {
+  float: left;
+  float: right;
+  /* This overrides the float:left above */
+
+  width: 16px;
+  /* Width of left column content (left column width minus left and right padding) */
+
+  position: relative;
+  right: 0px;
+  /* Width of the left-had side padding on the left column */
+}
+
+.col2content {
+	height: 272px; 
+	width: 100%;
+	margin-top: 184px;
+	background: url('img/noise.png');
+}
+
+.holygrail .col3 {
+  float: left;
+  float: right;
+  /* This overrides the float:left above */
+
+  width: 16px;
+  /* Width of right column content (right column width minus left and right padding) */
+
+  position: relative;
+  left: 50%;
+}
+/* Footer styles */
+#footer {
+  clear: both;
+  float: left;
+  width: 100%;
+  border-top: 1px solid #000;
+}
+#footer p {
+  padding: 10px;
+  margin: 0;
+}
