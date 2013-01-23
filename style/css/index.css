@@ -7,7 +7,7 @@ body {
   background: #fff;
   background-image: url('img/light_blue_noise.png');
   background-repeat: repeat-x;
-  background-position: 0px 200px;
+  background-position: 0px 107px;
 }
 body #header {
   clear: both;
@@ -75,10 +75,11 @@ body #ctr .colmask .colmid .colleft .col1wrap .col1 {
 }
 body #ctr .colmask .colmid .colleft .col1wrap .col1 .banner_center {
   height: 286px;
-  margin-top: 119px;
+  margin-top: 25px;
   background-image: url('img/banner_center_noise.png');
   background-repeat: repeat-x;
   margin-bottom: 16px;
+  padding-top: 16px;
 }
 body #ctr .colmask .colmid .colleft .col2 {
   float: left;
@@ -96,7 +97,7 @@ body #ctr .colmask .colmid .colleft .col2 {
 body #ctr .colmask .colmid .colleft .col2content {
   height: 272px;
   width: 100%;
-  margin-top: 184px;
+  margin-top: 91px;
   background: url('img/noise.png');
 }
 body #ctr .colmask .colmid .colleft .col3 {
