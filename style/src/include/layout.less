@@ -1,0 +1,133 @@
+body {
+	//metrics
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+	height: 100%;
+
+  //style
+	background: #fff;
+	background-image: url('img/light_blue_noise.png');
+	background-repeat: repeat-x;
+	background-position: 0px 200px;
+
+
+	#header {
+		clear: both;
+		float: left;
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		z-index: 9000;
+		
+		background-color: rgba(0, 0, 0, 0.86);
+	}
+
+	#ctr {
+		max-width: 992px; //992 - 32 = 960; 960/24 = 40px gutters
+		width: 100%;
+		margin: auto;
+		
+		.colmask {
+			position: relative;
+			/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+			clear: both;
+			float: left;
+			width: 100%;
+			overflow: hidden;
+  
+  		background: url('img/right_gradient.png') right;
+
+			.colmid {
+				float: left;
+				width: 200%;
+				margin-left: -16px;
+				/* Width of right column */
+
+				position: relative;
+				right: 100%;
+				background: #fff;
+				/* Centre column background colour */
+
+				.colleft {
+					float: left;
+					width: 100%;
+					margin-left: -50%;
+					position: relative;
+					left: 32px;
+					/* Left column width + right column width */
+
+					background: url('img/left_gradient.png') right;
+					background-repeat: repeat-y;
+					/* Left column background colour */
+
+					.col1wrap {
+						float: left;
+						width: 50%;
+						position: relative;
+						right: 16px;
+						/* Width of left column */
+
+						.col1 {
+							margin: 0 16px;
+							position: relative;
+							left: 200%;
+							overflow: hidden;
+							padding-top: 50px;
+							
+							.banner_center {
+								height: 286px;
+								margin-top: 119px;
+								background-image: url('img/banner_center_noise.png');
+								background-repeat: repeat-x;
+								margin-bottom: 16px;
+							}
+						}
+					}
+
+					.col2 {
+						float: left;
+						float: right;
+						/* This overrides the float:left above */
+
+						width: 16px;
+						/* Width of left column content (left column width minus left and right padding) */
+
+						position: relative;
+						right: 0px;
+						/* Width of the left-had side padding on the left column */
+					}
+
+					.col2content {
+						height: 272px; 
+						width: 100%;
+						margin-top: 184px;
+						background: url('img/noise.png');
+					}
+
+					.col3 {
+						float: left;
+						float: right;
+						/* This overrides the float:left above */
+
+						width: 16px;
+						/* Width of right column content (right column width minus left and right padding) */
+
+						position: relative;
+						left: 50%;
+					}
+				}
+			}
+		}
+	}
+
+	#footer {
+		clear: both;
+		float: left;
+		width: 100%;
+		border-top: 1px solid #000;
+	}
+}
+
+

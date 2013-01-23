@@ -17,7 +17,7 @@
 /* MAIN CONTAINER 
    modified by Raf :3 */
 .container { 
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto; }
 
 
@@ -31,7 +31,7 @@
 
 
 /* DEFAULT ROW STYLES */
-.row { margin-bottom: 1.5em; } /* set according to preference*/
+//.row { margin-bottom: 1.5em; } /* set according to preference*/
 
 							  
 /* DEFAULT COLUMN STYLES */
