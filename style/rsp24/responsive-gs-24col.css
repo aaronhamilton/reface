@@ -43,7 +43,8 @@
 
 @media ( min-width : 768px ) {
 	col {
-		margin-left: 2%;
+		margin-left: 1%;
+		margin-right: 1%;
 	}
 }
 
